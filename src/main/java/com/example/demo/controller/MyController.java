@@ -17,13 +17,14 @@ public class MyController {
 
     @GetMapping("")
     public String sayHello() {
+        return "welcome";
+    }
+
+    @GetMapping("/update")
+    public String update() {
         TouristAttraction toBeUpdated =  new TouristAttraction("SMK", "Museum for Kunst", "Ørestaden", 145, List.of("Kunst", "Museum"));
         TouristAttraction updated = repository.findByName(toBeUpdated.getName());
-        System.out.println("inden NY city " + updated);
         repository.updateAttraction(toBeUpdated);
-        updated = repository.findByName("SMK");
-        System.out.println("update NY city " + updated);
-
         return "welcome";
     }
 }
