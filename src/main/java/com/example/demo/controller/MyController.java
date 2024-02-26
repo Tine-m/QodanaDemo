@@ -17,7 +17,6 @@ public class MyController {
 
     @GetMapping("")
     public String sayHello() {
-        int i = 0;
         return "welcome";
     }
 
