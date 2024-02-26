@@ -1,6 +1,5 @@
 package com.example.demo.controller;
 
-import com.example.demo.controller.MyController;
 import com.example.demo.repository.TouristRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
