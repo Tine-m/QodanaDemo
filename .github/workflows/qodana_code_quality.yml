@@ -19,6 +19,9 @@ jobs:
           cache: maven
       - name: Build with Maven
         run: mvn -B test
+      - name: Publish Test Report
+        if: success() || failure()
+        uses: scacap/action-surefire-report@v1
 
   qodana:
     needs: build
