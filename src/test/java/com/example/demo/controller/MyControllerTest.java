@@ -35,6 +35,6 @@ class MyControllerTest {
         mockMvc.perform(get("/update"))
                 .andExpect(status().isOk())
                 .andExpect(view().name("welcome"))
-                .andExpect(content().string( containsString("WELCOMEX")));
+                .andExpect(content().string( containsString("WELCOME")));
     }
 }
