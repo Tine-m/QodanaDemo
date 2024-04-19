@@ -15,7 +15,7 @@ public class TouristRepository {
                     new TouristAttraction("SMK", "Museum for Kunst", "København", 145, List.of("Kunst", "Museum")),
                     new TouristAttraction("Odense Zoo", "Europas bedste zoo", "Odense", 95, List.of("Børnevenlig")),
                     new TouristAttraction("Dyrehaven", "Naturpark med skovområder", "Kongens Lyngby", 0, List.of("Natur", "Gratis")),
-                    new TouristAttraction("Tivoli", "Forlystelsespark i København centrum", "København", 175, List.of("Børnevenlig"))
+                    new TouristAttraction("Tivoli.", "Forlystelsespark i København centrum", "København", 175, List.of("Børnevenlig"))
             ));
 
     public List<TouristAttraction> findAll() {
