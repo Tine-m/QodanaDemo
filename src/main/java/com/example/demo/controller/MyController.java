@@ -17,7 +17,7 @@ public class MyController {
 
     @GetMapping("")
     public String sayHello() {
-        return "welcome";
+        return "welcome!";
     }
 
     @GetMapping("/update")
