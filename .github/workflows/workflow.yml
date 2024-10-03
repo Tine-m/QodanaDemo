@@ -16,9 +16,7 @@ jobs:
           java-version: '22'
           cache: maven
       - name: Build with Maven
-        run: mvn -B test
-      - name: Publish Test Report
-        if: always()
-        uses: scacap/action-surefire-report@v1
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+        run: mvn test --batch-mode --fail-at-end
+               - name: Publish Test Report
+               if: success() || failure()
+               uses: scacap/action-surefire-report@v1
