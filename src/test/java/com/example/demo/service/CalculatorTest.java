@@ -8,8 +8,8 @@ class CalculatorTest {
 
     @Test
     public void sumSmallNumbers() {
-        int expected = 2;
-        assertEquals(expected, Calculator.sum(1,1));
+        int expected = 4;
+        assertEquals(expected, Calculator.sum(2,2));
     }
 
 
