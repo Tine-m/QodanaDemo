@@ -22,7 +22,7 @@ public class MyController {
 
     @GetMapping("/update")
     public String update() {
-        TouristAttraction toBeUpdated =  new TouristAttraction("SMK", "Museum for Kunst", "Ørestaden", 145, List.of("Kunst", "Museum"));
+        TouristAttraction toBeUpdated =  new TouristAttraction("SMK", "Museum for Kunst.", "Ørestaden", 145, List.of("Kunst", "Museum"));
         TouristAttraction updated = repository.findByName(toBeUpdated.getName());
         repository.updateAttraction(updated);
         return "welcome";
